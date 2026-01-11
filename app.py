@@ -98,7 +98,7 @@ if submitted:
         
         # Extract "Option X" from the user's selected string
         if selected_option_text:
-            selected_option_label = selected_option_text.split(":")[0].strip() # e.g., "Option A"
+            selected_option_label = "Option " + selected_option_text.split(":")[0].strip() # e.g., "Option A"
         else:
             selected_option_label = None
 
@@ -111,7 +111,7 @@ if submitted:
         else:
             st.markdown(f"<div class='incorrect'>❌ <b>Incorrect.</b> You chose {selected_option_label if selected_option_label else 'Nothing'}. The correct answer was <b>{correct_option_label}</b>.</div>", unsafe_allow_html=True)
         
-        print(row)
+
         # Show Explanation
         st.markdown(f"<div class='explanation'>📖 <b>Notes Source:</b> {row['Explanation']}</div>", unsafe_allow_html=True)
         st.markdown("<br>", unsafe_allow_html=True)
