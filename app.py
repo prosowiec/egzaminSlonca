@@ -23,7 +23,7 @@ st.sidebar.header("Exam Settings")
 
 # Find available CSV files in the current directory that start with 'q'
 # Or just hardcode the expected files as requested
-available_files = ['q1.csv', 'q2.csv']
+available_files = ['q1.csv', 'q2.csv', 'q3.csv']
 existing_files = [f for f in available_files if os.path.exists(f)]
 
 if not existing_files:
