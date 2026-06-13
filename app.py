@@ -15,15 +15,15 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- App Title ---
-st.title("💊 Top Student Pharmacology Test")
-st.markdown("Based on *Farmakologia SPECIFIC tables.pdf* and *Pgarma general tables.pdf*")
+st.title("💊 Top Student Test")
+st.markdown("Based on *PDF* recived from *NAJUKOCHAŃSZE SŁOŃCE*")
 
 # --- Sidebar: File Selection ---
 st.sidebar.header("Exam Settings")
 
 # Find available CSV files in the current directory that start with 'q'
 # Or just hardcode the expected files as requested
-available_files = ['q1.csv', 'q2.csv', 'q3.csv']
+available_files = ['gemini.csv', 'deepseek.csv']  # Add more filenames as needed
 existing_files = [f for f in available_files if os.path.exists(f)]
 
 if not existing_files:
